@@ -5,6 +5,7 @@
   --colorIcon: #7dd3fc;
   --colorNitro: hsl(295.65, 50%, 51.37%);
   --colorPing: #d95050;
+  --colorBlurple: #5865F2;
 }
 
 /* animations */
@@ -41,14 +42,19 @@
     color: var(--colorNitro);
   }
 }
-/* Close icons */
-.closeIcon-1NwtbI:hover {
+/* Close / hide / remove icons  */
+.closeIcon-1NwtbI:hover, div[aria-label="Hide Member List"]:hover svg {
   animation-fill-mode: forwards;
   animation-duration: 100ms;
   animation-name: colorChangeClose;
 }
 
-.privateChannelRecipientsInviteButtonIcon-1ObKXK > .icon-2xnN2Y:hover {
+div[aria-label="Deafened"]:hover svg, div[aria-label="Muted"]:hover svg {
+  color: var(--colorRemove);
+}
+
+/* Open / show / add icons */
+.privateChannelRecipientsInviteButtonIcon-1ObKXK > .icon-2xnN2Y:hover, div[aria-label="Show Member List"]:hover svg {
   animation-fill-mode: forwards;
   animation-duration: 100ms;
   animation-name: colorChangeAdd;
@@ -59,7 +65,10 @@
 div[aria-label="Add Friends to DM"] > svg:hover,
 div[aria-label="Pinned Messages"] > svg:hover,
 div[aria-label="Start Video Call"] > svg:hover,
-div[aria-label="Start Voice Call"] > svg:hover {
+div[aria-label="Start Voice Call"] > svg:hover,
+div[aria-label="Notification Settings"] > svg:hover,
+div[aria-label="Threads"] > svg:hover,
+div[aria-label="Inbox"] > svg:hover {
   animation-fill-mode: forwards;
   animation-duration: 100ms;
   animation-name: colorChangeIcon;
@@ -78,6 +87,26 @@ div[aria-label="Start Voice Call"] > svg:hover {
   animation-name: colorChangeNitro;
 }
 
+/* Channel icons */
+
 .listItem-3SmSlK:hover .pill-2RsI5Q>span {
   background-color: var(--colorPing);
+}
+
+div[aria-label="Open Chat"]:hover svg>path {
+  color: var(--colorIcon);
+}
+
+div[aria-label="Create Invite"]:hover svg>path {
+  color: var(--colorAdd);
+} 
+
+/* Voice channel icons */
+
+.containerDefault-YUSmu3:hover .content-1gYQeQ>a>div[role="img"]>svg {
+  color: var(--colorBlurple);
+}
+
+.title-31SJ6t:hover .children-3xh0VB>.iconWrapper-2awDjA>svg {
+  color: var(--colorBlurple);
 }
