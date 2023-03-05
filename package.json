@@ -10,7 +10,8 @@
     "watch": "replugged build theme --watch",
     "bundle": "replugged bundle theme",
     "lint": "prettier ./src --check",
-    "lint:fix": "prettier ./src --write"
+    "lint:fix": "prettier ./src --write",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,12 @@
     "@parcel/config-default": "^2.8.3",
     "@parcel/core": "^2.8.3",
     "@types/node": "^18.11.15",
+    "husky": "^8.0.3",
     "prettier": "^2.8.1",
     "replugged": "4.0.0-beta0.26"
+  },
+  "dependencies": {
+    "@types/inquirer": "^9.0.3",
+    "inquirer": "^9.1.4"
   }
 }
