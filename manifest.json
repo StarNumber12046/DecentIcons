@@ -1,16 +1,16 @@
 {
-  "id": "dev.replugged.ThemeTemplate",
-  "name": "Theme Template",
-  "description": "A theme template",
+  "id": "tk.starnumber.DecentIcons",
+  "name": "Decent Icons",
+  "description": "Colored icons and tooltips + cozy animations",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "StarNumber12046",
+    "discordID": "870649046019244043",
+    "github": "StarNumber12046"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/theme-template"
+    "id": "StarNumber12046/DecentIcons"
   },
   "license": "MIT",
   "type": "replugged-theme",
