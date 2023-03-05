@@ -49,6 +49,8 @@
   animation-name: colorChangeClose;
 }
 
+/* Muted and deafened */
+
 div[aria-label="Deafened"]:hover svg, div[aria-label="Muted"]:hover svg {
   color: var(--colorRemove);
 }
